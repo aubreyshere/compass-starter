@@ -1,7 +1,19 @@
-:host {
-  display: block;
-  .quarterly-goals-item-container {
-    // REMOVE WHEN FINISHING LAYOUT STYLES
-    border: 1px solid black;
+.quarterly-goals-item-container {
+  display: flex;
+
+  .left-items {
+    display: flex;
+
+    .goal-title {
+      
+    }
+
+    .goal-hashtag {
+      
+    }
+  }
+
+  .goal-counter {
+    margin: auto 10px 10px auto;
   }
 }
