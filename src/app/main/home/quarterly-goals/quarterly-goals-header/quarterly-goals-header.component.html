@@ -1,3 +1,7 @@
 <div class="quarterly-goals-header-container">
-  quarterly-goals-header works!
+  <div class="quarterly-goals-text">
+    Quarterly Goals
+    <img (click)="openModal(true)" src='images/edit.svg'> 
+  </div>
+  {{ getQuarterAndYear() }}
 </div>
