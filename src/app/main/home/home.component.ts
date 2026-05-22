@@ -4,6 +4,7 @@ import { User } from 'src/app/core/store/user/user.model';
 import { AuthStore } from 'src/app/core/store/auth/auth.store';
 import { BatchWriteService, BATCH_WRITE_SERVICE } from 'src/app/core/store/batch-write.service';
 import { NavbarComponent } from 'src/app/shared/navbar/navbar.component';
+import { QuarterlyGoalsHeaderComponent } from 'src/app/main/home/quarterly-goals/quarterly-goals-header/quarterly-goals-header.component';
 import { QuarterlyGoalsComponent } from 'src/app/main/home/quarterly-goals/quarterly-goals.component';
 
 @Component({
@@ -15,6 +16,7 @@ import { QuarterlyGoalsComponent } from 'src/app/main/home/quarterly-goals/quart
   animations: HomeAnimations,
   imports: [
     NavbarComponent,
+    QuarterlyGoalsHeaderComponent
     QuarterlyGoalsComponent,
   ]
 })
