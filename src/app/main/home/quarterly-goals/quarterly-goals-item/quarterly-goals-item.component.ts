@@ -3,6 +3,7 @@ import { QuarterlyGoalsItemAnimations } from './quarterly-goals-item.animations'
 import { User } from 'src/app/core/store/user/user.model';
 import { AuthStore } from 'src/app/core/store/auth/auth.store';
 import { BatchWriteService, BATCH_WRITE_SERVICE } from 'src/app/core/store/batch-write.service';
+import { MatCheckbox } from '@angular/material/checkbox';
 
 @Component({
   selector: 'app-quarterly-goals-item',
@@ -12,6 +13,7 @@ import { BatchWriteService, BATCH_WRITE_SERVICE } from 'src/app/core/store/batch
   animations: QuarterlyGoalsItemAnimations,
   standalone: true,
   imports: [
+    MatCheckbox,
   ],
 })
 export class QuarterlyGoalsItemComponent implements OnInit {
@@ -20,6 +22,10 @@ export class QuarterlyGoalsItemComponent implements OnInit {
 
   /** The current signed in user. */
   currentUser: Signal<User> = this.authStore.user;
+
+  goalTitle: Signal<string> = signal('Apply to all internships');
+
+  hashtag: Signal<string> = signal('apply-internships');
 
   // --------------- LOCAL UI STATE ----------------------
 
